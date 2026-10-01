@@ -17,7 +17,7 @@ const firebaseConfig = {
   // --- UI ---
   const st=document.createElement('style');
   st.textContent=`#syncBtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:9999;background:#1a2536;color:#dbe6f5;border:1px solid #26344a;border-radius:20px;padding:8px 14px;font-size:13px;cursor:pointer}
-  #syncPanel{position:fixed;right:14px;bottom:calc(60px + env(safe-area-inset-bottom,0px));z-index:9999;background:#131c2b;color:#dbe6f5;border:1px solid #26344a;border-radius:12px;padding:14px;width:260px;display:none;font-size:14px}
+  #syncPanel{position:fixed;right:14px;bottom:calc(60px + env(safe-area-inset-bottom,0px));z-index:9999;background:#131c2b;color:#dbe6f5;border:1px solid #26344a;border-radius:12px;padding:14px;width:260px;max-width:calc(100vw - 28px);display:none;font-size:14px}
   #syncPanel input{width:100%;box-sizing:border-box;margin:4px 0;padding:8px;border-radius:8px;border:1px solid #26344a;background:#0d1420;color:#dbe6f5;font-size:16px}
   #syncPanel button{margin:6px 6px 0 0;padding:7px 12px;border-radius:8px;border:0;background:#3b82f6;color:#fff;cursor:pointer}
   #syncPanel .msg{margin-top:8px;font-size:12px;opacity:.8}`;
